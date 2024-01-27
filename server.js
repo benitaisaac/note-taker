@@ -1,8 +1,8 @@
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 const mainRouter = require('./Routes/mainRoute');
 
-//import middleware
+//import custom middleware
 const logger = require('./Middleware/logger');
 
 const app = express(); 
