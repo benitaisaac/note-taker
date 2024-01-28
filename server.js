@@ -15,19 +15,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 app.use('/', mainRouter);
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, './public/index.html'))
-// });
-
-// app.get('/notes', (req, res) => {
-//     res.sendFile(path.join(__dirname, './public/notes.html'))
-// });
-
-// app.post('/api/notes', (req, res) => {
-    
-// })
-
-
 app.listen(port, (req, res) => {
     console.log(`your app is running on ${port}`)
 }
