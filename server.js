@@ -13,6 +13,7 @@ const port = process.env.PORT || 3003;
 app.use(logger);
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static('public'));
 app.use('/', mainRouter);
 
 app.listen(port, (req, res) => {
