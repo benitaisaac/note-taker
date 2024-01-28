@@ -11,8 +11,9 @@ const port = process.env.PORT || 3003;
 
 //Middleware
 app.use(logger);
-app.use('/', mainRouter);
 app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }))
+app.use('/', mainRouter);
 
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname, './public/index.html'))
