@@ -5,13 +5,14 @@ const mainRouter = require('./Routes/mainRoute');
 //import custom middleware
 const logger = require('./Middleware/logger');
 
+
 const app = express(); 
 const port = process.env.PORT || 3003; 
 
 //Middleware
+app.use(logger);
 app.use('/', mainRouter);
-app.use(logger); 
-app.use(express.json); 
+app.use(express.json()); 
 
 // app.get('/', (req, res) => {
 //     res.sendFile(path.join(__dirname, './public/index.html'))

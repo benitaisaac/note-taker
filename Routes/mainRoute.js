@@ -3,6 +3,7 @@ const notesRoute = require('./notesRoute');
 const apiRoute = require('./apiRoute');
 const path = require('path'); 
 
+
 //send to notesRoute
 router.use('/notes', notesRoute); 
 router.use('/api', apiRoute);
