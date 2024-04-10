@@ -3,6 +3,8 @@
 
 ![An image of the deployed application](./public/assets/application.png)
 
+Link to deployed Application: https://vast-sea-35356-9d24dd1c1829.herokuapp.com/ 
+
 ## Description 
     This note taker app can be used to easily write and save notes. It uses express.js for backend. 
 ## Table of Contents
